@@ -1,0 +1,20 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: portifolio_development
+
+test:
+  <<: *default
+  database: portifolio_test
+
+production:
+  <<: *default
+  database: portifolio_production
+
