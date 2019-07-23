@@ -10,7 +10,7 @@ services:
     depends_on:
       - 'db'
     build: .
-    command: bash start
+    command: bash start.sh
     ports:
       - '3000:3000'
     volumes:
@@ -18,7 +18,7 @@ services:
       - 'box:/box'
     stdin_open: true
     tty: true
- 
+
   box:
     image: busybox
     volumes:
