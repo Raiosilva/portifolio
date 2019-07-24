@@ -14,6 +14,6 @@ class Portfolio < ApplicationRecord
   has_many :languages
   has_many :socials
   has_many :contacts
-  
+
   has_one :additional_informations
 end
